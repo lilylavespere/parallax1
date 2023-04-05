@@ -1,0 +1,73 @@
+@import url("styless.css");
+body, html{
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:"lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#136AA3;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+	position:relative;
+	opacity:0.90;
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	/*
+	fixed = parallax
+	scroll = normal
+	*/
+	background-attachment: fixed;
+	
+}
+
+
+.pimg1{
+    background-image: url(images/cover.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg2{
+    background-image: url(images/ballerelye.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg3{
+    background-image: url(images/coffin_fish.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg4 {
+    background-image: url(images/flowerhorn.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg5 {
+    background-image: url(images/spotted_handfish.png);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section{
+	background-color: #136AA3;
+	padding: 50px 80px;
+}
+
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+		background-attachment: scroll;
+	}
+}
+
